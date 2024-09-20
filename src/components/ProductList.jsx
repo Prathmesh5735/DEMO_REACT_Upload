@@ -13,7 +13,7 @@ const ProductList = () => {
   const navigate=useNavigate();
   // fetch from json server
   function DataFetch() {
-    axios.get(`http://localhost:8000/products`, {
+    axios.get(`https://demo-react-upload-backend-1.onrender.com/products`, {
       params: {
         _page: page,
         _limit: 5,

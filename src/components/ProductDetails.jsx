@@ -7,7 +7,7 @@ const Description = () => {
 
     const params=useParams()
     const descriptiondata=()=>{
-        axios.get(`http://localhost:8000/products/${params.id}`)
+        axios.get(`https://demo-react-upload-backend-1.onrender.com/products/${params.id}`)
         .then((res)=>{
            setdescription(res.data)
         })

@@ -14,7 +14,7 @@ const AddProduct = () => {
   });
   function addDataInProduct(e) {
     e.preventDefault();
-    axios.post('http://localhost:8000/products', userData, {
+    axios.post('https://demo-react-upload-backend-1.onrender.com/products', userData, {
       "Content-Type": "application/json"
     }).then(e => {
       if (e.status == 201) {

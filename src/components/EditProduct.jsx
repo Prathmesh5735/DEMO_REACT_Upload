@@ -14,7 +14,7 @@ const EditProduct = () => {
   const navigate=useNavigate();
   // fetched update data incomplete of auto fill data
   function fetchDataWithId() {
-    axios.get(`http://localhost:8000/products/${id}`).then(e => {
+    axios.get(`https://demo-react-upload-backend-1.onrender.com/products/${id}`).then(e => {
       setUserData({ title: e.data.title, price: e.data.price, image: e.data.image, category: e.data.category, description: e.data.description });
     }).catch(e => console.log(e));
   }
